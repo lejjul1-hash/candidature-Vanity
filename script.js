@@ -1,50 +1,79 @@
-function nextStep() {
-  document.getElementById("step1").style.display = "none";
-  document.getElementById("step2").style.display = "block";
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #050506;
+    color: white;
 }
 
-function prevStep() {
-  document.getElementById("step2").style.display = "none";
-  document.getElementById("step1").style.display = "block";
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: #0f1113;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
 }
 
-function sendForm() {
+h1, h2 {
+    text-align: center;
+}
 
-  const webhook = "https://discord.com/api/webhooks/1446994919771344956/pVM-5hXVXBuEwNMRq6rgDvIrX3_3RP09SA73tVFGCa8TpNAacIE7Fsvf-1GC9ht8V7Qq";
+label {
+    margin-top: 15px;
+    display: block;
+    font-weight: bold;
+}
 
-  const data = {
-    content: "📩 **Nouvelle Candidature Staff - Glast**",
-    embeds: [{
-      title: "Informations du candidat",
-      color: 15548997,
-      fields: [
-        { name:"📘 Présentation IRL", value: document.getElementById("irl").value || "Aucune réponse" },
-        { name:"🧩 Discord", value: document.getElementById("discord").value },
-        { name:"👤 Prénom", value: document.getElementById("prenom").value },
-        { name:"🎂 Âge", value: document.getElementById("age").value },
-        { name:"⏰ Disponibilités", value: document.getElementById("dispos").value },
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: none;
+    background: #1c1f24;
+    color: white;
+}
 
-        { name:"📌 Catégorie", value: document.getElementById("categorie").value },
-        { name:"🔥 Motivations", value: document.getElementById("motivations").value },
-        { name:"🎯 Pourquoi lui ?", value: document.getElementById("why").value },
-        { name:"💎 Qualités", value: document.getElementById("qualites").value },
-        { name:"📘 Définition du rôle", value: document.getElementById("definition").value },
-        { name:"⭐ Expérience", value: document.getElementById("experience").value },
-        { name:"📎 Extra", value: document.getElementById("extra").value },
-      ]
-    }]
-  };
+textarea {
+    height: 90px;
+    resize: none;
+}
 
-  fetch(webhook, {
-    method: "POST",
-    headers: {"Content-Type": "application/json"},
-    body: JSON.stringify(data)
-  })
-  .then(() => {
-    document.getElementById("status").innerHTML = "✅ Candidature envoyée avec succès !";
-  })
-  .catch(() => {
-    document.getElementById("status").innerHTML = "❌ Une erreur est survenue.";
-  });
+.next-btn, .back-btn, .send-btn {
+    margin-top: 20px;
+    width: 48%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .2s;
+}
 
+.next-btn, .send-btn {
+    background: linear-gradient(90deg, #ff1e1e, #ff6b6b);
+    box-shadow: 0 0 20px rgba(255, 30, 30, 0.4);
+}
+
+.back-btn {
+    background: linear-gradient(90deg, #444, #666);
+}
+
+.next-btn:hover, .send-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 0, .6);
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#status {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
 }
