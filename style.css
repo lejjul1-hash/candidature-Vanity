@@ -16,15 +16,20 @@ body {
     font-size: 28px;
     margin-bottom: 25px;
     font-weight: 900;
-    color: #ffcc00;
-    text-shadow: 0 0 15px #ffd84d;
+    color: #ffee00;
+    text-shadow:
+        0 0 10px #ffee00,
+        0 0 20px #fff700,
+        0 0 40px #fffb91;
 }
 
 .card {
     background: #0e0e10;
     padding: 22px;
     border-radius: 12px;
-    box-shadow: 0 0 25px rgba(255,204,0,0.25);
+    box-shadow:
+        0 0 20px rgba(255,238,0,0.35),
+        0 0 40px rgba(255,247,0,0.25);
     border: 1px solid rgba(255,255,255,0.03);
 }
 
@@ -39,8 +44,8 @@ input, textarea, select {
     width: 100%;
     padding: 12px;
     border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.08);
-    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,238,0,0.25);
+    background: rgba(255,238,0,0.05);
     color: white;
     resize: none;
     outline: none;
@@ -64,13 +69,19 @@ textarea {
 }
 
 .btn-next {
-    background: linear-gradient(90deg, #ffcc00, #ffd84d);
-    color: white;
-    box-shadow: 0 0 15px rgba(255,204,0,0.5);
+    background: linear-gradient(90deg, #ffee00, #fff700);
+    color: black;
+    box-shadow:
+        0 0 15px #ffee00,
+        0 0 30px #fff700,
+        0 0 50px rgba(255,247,0,0.9);
 }
 
 .btn-next:hover {
-    box-shadow: 0 0 25px rgba(255,216,77,0.8);
+    box-shadow:
+        0 0 25px #ffee00,
+        0 0 50px #fff700,
+        0 0 80px rgba(255,247,0,1);
 }
 
 .btn-back {
@@ -79,13 +90,19 @@ textarea {
 }
 
 .btn-send {
-    background: linear-gradient(90deg, #ffcc00, #ffd84d);
-    color: white;
-    box-shadow: 0 0 15px rgba(255,204,0,0.5);
+    background: linear-gradient(90deg, #ffee00, #fff700);
+    color: black;
+    box-shadow:
+        0 0 15px #ffee00,
+        0 0 30px #fff700,
+        0 0 50px rgba(255,247,0,0.9);
 }
 
 .btn-send:hover {
-    box-shadow: 0 0 25px rgba(255,216,77,0.8);
+    box-shadow:
+        0 0 25px #ffee00,
+        0 0 50px #fff700,
+        0 0 80px rgba(255,247,0,1);
 }
 
 .btn-row {
@@ -97,7 +114,10 @@ textarea {
     margin-top: 10px;
     text-align: center;
     font-weight: 700;
-    color: #ffcc00;
+    color: #ffee00;
+    text-shadow:
+        0 0 10px #ffee00,
+        0 0 20px #fff700;
 }
 
 .radio-group input {
@@ -116,8 +136,11 @@ header {
 .header-title {
     font-size: 22px;
     font-weight: 800;
-    color: #ffcc00;
-    text-shadow: 0 0 10px #ffd84d;
+    color: #ffee00;
+    text-shadow:
+        0 0 10px #ffee00,
+        0 0 25px #fff700,
+        0 0 45px #fffb91;
 }
 
 /* 🔥 BOUTON ADMIN EN HAUT */
@@ -128,14 +151,18 @@ header {
     background: #1c1e23;
     padding: 10px 18px;
     border-radius: 8px;
-    color: #ffcc00;
+    color: #ffee00;
     font-weight: 800;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,238,0,0.4);
     cursor: pointer;
+    box-shadow:
+        0 0 12px rgba(255,238,0,0.6);
 }
 
 .admin-btn-top:hover {
-    background: #2b2e33;
+    box-shadow:
+        0 0 25px #ffee00,
+        0 0 50px #fff700;
 }
 
 /* PANEL ADMIN */
@@ -149,21 +176,27 @@ header {
     padding: 12px;
     margin-bottom: 12px;
     border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,238,0,0.25);
 }
 
 .admin-btn {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(90deg, #ffcc00, #ffd84d);
-    color: white;
+    background: linear-gradient(90deg, #ffee00, #fff700);
+    color: black;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-weight: 700;
-    box-shadow: 0 0 12px rgba(255,204,0,0.5);
+    box-shadow:
+        0 0 15px #ffee00,
+        0 0 30px #fff700,
+        0 0 50px rgba(255,247,0,0.9);
 }
 
 .admin-btn:hover {
-    box-shadow: 0 0 22px rgba(255,216,77,0.8);
+    box-shadow:
+        0 0 30px #ffee00,
+        0 0 60px #fff700,
+        0 0 90px rgba(255,247,0,1);
 }
