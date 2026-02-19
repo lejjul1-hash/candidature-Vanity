@@ -102,7 +102,7 @@ ${data.irl || "Non renseignée"}`
             }
         ],
         footer: {
-            text: "💼 Système de candidature - NovaWorld"
+            text: "💼 Système de candidature - Vnew"
         },
         timestamp: new Date()
     }]
@@ -171,6 +171,7 @@ function toggleAutrePoste() {
 
     box.style.display = select.value === "Autre" ? "block" : "none";
 }
+
 
 
 
