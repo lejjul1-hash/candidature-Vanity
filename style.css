@@ -16,11 +16,11 @@ body {
     font-size: 28px;
     margin-bottom: 25px;
     font-weight: 900;
-    color: #4c3cff;
+    color: #ffd600;
     text-shadow:
-        0 0 10px #4c3cff,
-        0 0 20px #5a48ff,
-        0 0 40px #7a6cff;
+        0 0 10px #ffd600,
+        0 0 20px #ffea00,
+        0 0 40px #fff176;
 }
 
 .card {
@@ -28,8 +28,8 @@ body {
     padding: 22px;
     border-radius: 12px;
     box-shadow:
-        0 0 20px rgba(76,60,255,0.35),
-        0 0 40px rgba(90,72,255,0.25);
+        0 0 20px rgba(255,214,0,0.35),
+        0 0 40px rgba(255,234,0,0.25);
     border: 1px solid rgba(255,255,255,0.03);
 }
 
@@ -44,8 +44,8 @@ input, textarea, select {
     width: 100%;
     padding: 12px;
     border-radius: 10px;
-    border: 1px solid rgba(76,60,255,0.25);
-    background: rgba(76,60,255,0.05);
+    border: 1px solid rgba(255,214,0,0.25);
+    background: rgba(255,214,0,0.05);
     color: white;
     resize: none;
     outline: none;
@@ -69,19 +69,19 @@ textarea {
 }
 
 .btn-next {
-    background: linear-gradient(90deg, #4c3cff, #5a48ff);
+    background: linear-gradient(90deg, #ffd600, #ffea00);
     color: black;
     box-shadow:
-        0 0 15px #4c3cff,
-        0 0 30px #5a48ff,
-        0 0 50px rgba(90,72,255,0.9);
+        0 0 15px #ffd600,
+        0 0 30px #ffea00,
+        0 0 50px rgba(255,234,0,0.9);
 }
 
 .btn-next:hover {
     box-shadow:
-        0 0 25px #4c3cff,
-        0 0 50px #5a48ff,
-        0 0 80px rgba(90,72,255,1);
+        0 0 25px #ffd600,
+        0 0 50px #ffea00,
+        0 0 80px rgba(255,234,0,1);
 }
 
 .btn-back {
@@ -90,19 +90,19 @@ textarea {
 }
 
 .btn-send {
-    background: linear-gradient(90deg, #4c3cff, #5a48ff);
+    background: linear-gradient(90deg, #ffd600, #ffea00);
     color: black;
     box-shadow:
-        0 0 15px #4c3cff,
-        0 0 30px #5a48ff,
-        0 0 50px rgba(90,72,255,0.9);
+        0 0 15px #ffd600,
+        0 0 30px #ffea00,
+        0 0 50px rgba(255,234,0,0.9);
 }
 
 .btn-send:hover {
     box-shadow:
-        0 0 25px #4c3cff,
-        0 0 50px #5a48ff,
-        0 0 80px rgba(90,72,255,1);
+        0 0 25px #ffd600,
+        0 0 50px #ffea00,
+        0 0 80px rgba(255,234,0,1);
 }
 
 .btn-row {
@@ -114,10 +114,10 @@ textarea {
     margin-top: 10px;
     text-align: center;
     font-weight: 700;
-    color: #4c3cff;
+    color: #ffd600;
     text-shadow:
-        0 0 10px #4c3cff,
-        0 0 20px #5a48ff;
+        0 0 10px #ffd600,
+        0 0 20px #ffea00;
 }
 
 .radio-group input {
@@ -136,11 +136,11 @@ header {
 .header-title {
     font-size: 22px;
     font-weight: 800;
-    color: #4c3cff;
+    color: #ffd600;
     text-shadow:
-        0 0 10px #4c3cff,
-        0 0 25px #5a48ff,
-        0 0 45px #7a6cff;
+        0 0 10px #ffd600,
+        0 0 25px #ffea00,
+        0 0 45px #fff176;
 }
 
 /* 🔥 BOUTON ADMIN EN HAUT */
@@ -151,18 +151,18 @@ header {
     background: #1c1e23;
     padding: 10px 18px;
     border-radius: 8px;
-    color: #4c3cff;
+    color: #ffd600;
     font-weight: 800;
-    border: 1px solid rgba(76,60,255,0.4);
+    border: 1px solid rgba(255,214,0,0.4);
     cursor: pointer;
     box-shadow:
-        0 0 12px rgba(76,60,255,0.6);
+        0 0 12px rgba(255,214,0,0.6);
 }
 
 .admin-btn-top:hover {
     box-shadow:
-        0 0 25px #4c3cff,
-        0 0 50px #5a48ff;
+        0 0 25px #ffd600,
+        0 0 50px #ffea00;
 }
 
 /* PANEL ADMIN */
@@ -176,36 +176,36 @@ header {
     padding: 12px;
     margin-bottom: 12px;
     border-radius: 10px;
-    border: 1px solid rgba(76,60,255,0.25);
+    border: 1px solid rgba(255,214,0,0.25);
 }
 
 .admin-btn {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(90deg, #4c3cff, #5a48ff);
+    background: linear-gradient(90deg, #ffd600, #ffea00);
     color: black;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-weight: 700;
     box-shadow:
-        0 0 15px #4c3cff,
-        0 0 30px #5a48ff,
-        0 0 50px rgba(90,72,255,0.9);
+        0 0 15px #ffd600,
+        0 0 30px #ffea00,
+        0 0 50px rgba(255,234,0,0.9);
 }
 
 .admin-btn:hover {
     box-shadow:
-        0 0 30px #4c3cff,
-        0 0 60px #5a48ff,
-        0 0 90px rgba(90,72,255,1);
+        0 0 30px #ffd600,
+        0 0 60px #ffea00,
+        0 0 90px rgba(255,234,0,1);
 }
 
 /* SELECT FIX DARK */
 select {
     background-color: #0e0e10 !important;
     color: #fff !important;
-    border: 1px solid rgba(76,60,255,0.35);
+    border: 1px solid rgba(255,214,0,0.35);
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -221,11 +221,11 @@ select option {
 select option:hover,
 select option:checked {
     background-color: #1c1e23 !important;
-    color: #4c3cff !important;
+    color: #ffd600 !important;
 }
 
 /* FOCUS */
 select:focus {
-    border-color: #4c3cff;
-    box-shadow: 0 0 12px #4c3cff;
+    border-color: #ffd600;
+    box-shadow: 0 0 12px #ffd600;
 }
