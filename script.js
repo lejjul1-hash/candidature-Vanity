@@ -102,7 +102,7 @@ ${data.irl || "Non renseignée"}`
             }
         ],
         footer: {
-            text: "💼 Système de candidature - Vanity"
+            text: "💼 Système de candidature - enewfa"
         },
         timestamp: new Date()
     }]
